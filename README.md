@@ -32,9 +32,9 @@ The purpose of this application is to show some basic concepts and patterns. It 
      - Transpile code
      - Using plugins to add special transpilers /*dotall-regex*/  
 
-This application is using [Google Firebase](https://firebase.google.com/) as backend. To build and run the application you have to add **.secret** file to the root of the project. This file must export an object with firebase settings.
+This application is using [Google Firebase](https://firebase.google.com/) as backend. To build and run the application you have to add **.secrets** file to the root of the project. This file must export an object with firebase settings.
 
-**.secret** content:
+**.secrets** content:
 
 ```JavaScript
 export default {
