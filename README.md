@@ -47,3 +47,5 @@ export default {
     appId: "Your Firebase App ID"
 }
 ```
+
+*Improvements to components and patterns are warmly welcomed!*
