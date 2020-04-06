@@ -1,7 +1,9 @@
 export default class TemplateEngine {
     constructor(){
-        this.searchExp = /\{\{?([A-Za-z]+)\}\}/;
-        this.loopExp = /\{\{loop ?([A-Za-z]+)\}\}?(.+)\{\{endLoop\}\}/s;
+        this.searchExp = /\{\{([A-Za-z]+)\}\}/;
+        this.loopExp = /\{\{loop ([A-Za-z]+)\}\}(.+)\{\{endLoop\}\}/s;
+        this.ifExp = /\{\{if ([^{}]+)\}\}(.+)\{\{endIf\}\}/s;
+        this.ifElseExp = /\{\{if ([^{}]+)\}\}(.+)\{\{else\}\}(.+)\{\{endIf\}\}/s;
     }
 
     compile(template){
